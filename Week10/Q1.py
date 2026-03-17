@@ -44,7 +44,7 @@ def add_credential(website, username, password):
         "INSERT INTO vault (website, username, password) VALUES (?, ?,?)", (website, username, password)
     )
     conn.commit()
-    conn.close
+    conn.close()
 
 
 # TODO: Complete get_all_credentials()
@@ -58,7 +58,7 @@ def get_all_credentials():
         "SELECT * FROM vault ORDER BY website ASC"
     )
     rows = cursor.fetchall()
-    conn.close
+    conn.close()
     return rows
 
 
@@ -72,7 +72,7 @@ def find_credential(website):
     cursor.execute(
         "SELECT * FROM vault WHERE website = ?", (website,))
     rows = cursor.fetchall()
-    conn.close
+    conn.close()
     return rows
 
 
