@@ -68,7 +68,7 @@ if __name__ == "__main__":
     print("\n--- Scanner 1: localhost ---")
     scanner1 = SimpleScanner("127.0.0.1")
     print(f"  Scanning {scanner1.target} ports 78-82...")
-    scanner1.scan_range(78, 82)
+    scanner1.scan_range(20, 10000)
     scanner1.display_results()
 
     # Create second scanner object — separate target, separate results
