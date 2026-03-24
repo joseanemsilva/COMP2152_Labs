@@ -39,7 +39,7 @@ class Report:
     # TODO: Write add_finding(self, finding)
     #   Append the finding to self.findings
     def add_finding(self, finding):
-        self.findings.append((self.findings))
+        self.findings.append((finding))
 
 
     # TODO: Write get_by_severity(self, severity)
